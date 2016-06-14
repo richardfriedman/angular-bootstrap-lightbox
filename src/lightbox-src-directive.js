@@ -160,7 +160,7 @@ angular.module('bootstrapLightbox').directive('lightboxSrc', ['$window',
 
         if (!Lightbox.isVideo(Lightbox.image)) { // image
           // blank the image before resizing the element
-          element[0].src = '#';
+          element[0].src = '//:0';
 
           // handle failure to load the image
           var failure = function () {
